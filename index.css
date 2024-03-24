@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.4fr;
+    grid-template-areas: 'nav nav nav' 'main main main' 'content1 content2 content3' 'footer footer footer';
+    grid-gap: 0.5rem;
+}
+.icons{
+    width: 30px;
+}
+nav{
+    grid-area: nav;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px; 
+}
+.navMenu{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    font-size: 38px;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+li:hover{
+    opacity: 0.1;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+}
+.mainLeft{
+    width: 55%;
+    height: 100%; 
+   margin: 55px;
+}
+.mainRight{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-image{
+    width: 45%;
+    height: 70%;
+    border-radius: 50%;
+   
+}
+button{
+    margin-top: 15px;
+    margin-right: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.whatsApp-btn{
+    background-color: #32CD32;
+    color: white;
+}
+.whatsApp-btn-icon{
+    width: 18px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+span{
+    font-size: 16px;
+    color: red;
+}
+.description-para{
+    font-family: Monospace;
+    font-size: 18px;
+}
+#content1{
+    grid-area: content1;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    box-shadow: 10px 10px 5px 12px rgb(0,0,0,0.1);
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+.school{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding-left: 20px;
+}
+.skills-icon{
+    width: 75px;
+}
+.skills-icon-link{
+    width: 15px;
+}
+#content2{
+    box-shadow: 10px 10px 5px 12px rgb(0,0,0,0.1);
+    grid-area: content2;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#content3{
+    box-shadow: 10px 10px 5px 12px rgb(0,0,0,0.1);
+    grid-area: content3;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+
+}
+.github-repo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-weight:500;
+    font-family: monospace;
+    font-size: 16px;
+}
+footer{
+    grid-area: footer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 600;
+   font-size: 18px;
+   color: gray;
+}
+@media only screen and (max-width: 900px) {
+    
+    .container{
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 0.4fr;
+        grid-template-areas: 'nav nav nav' 'main main main' 'content1 content1 content1' 'content2 content2 content2' 'content3 content3 content3' 'footer footer footer';
+        grid-gap: 0.5rem;
+    }
+    .description-para{
+        font-family: Monospace;
+        font-size: 13px;
+    }
+    .my-image{
+        width: 55%;
+        height: 50%;
+        border-radius: 50%;
+       
+    } 
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 30px;
+        grid-gap: 8px;
+    } 
+    button{
+        margin-top: 15px;
+        margin-right: 15px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        font-size: 13px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .icon{
+        width:18px
+    }
+    .description-para{
+        font-family: Monospace;
+        font-size: 11px;
+    }
+    main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .my-image{
+        width: 75%;
+        height: 70%;
+        border-radius: 50%;
+       
+    } 
+    .mainRight{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
