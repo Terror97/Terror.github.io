@@ -162,7 +162,11 @@ footer{
     font-weight: 600;
     box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
 }
-    
+    li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
     .container{
         display: grid;
         min-height: 100vh;
