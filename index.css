@@ -157,6 +157,11 @@ footer{
    color: gray;
 }
 @media only screen and (max-width: 900px) {
+    .navbar{
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
+}
     
     .container{
         display: grid;
